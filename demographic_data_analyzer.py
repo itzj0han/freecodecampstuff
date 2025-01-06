@@ -1,6 +1,6 @@
 import pandas as pd
 import numpy as np
-df=pd.read_csv(r'C:\Users\Johan\Desktop\freecodecampstuff\adult.data', header=None)
+df=pd.read_csv('adult.data', header=None)
 df.columns=['age','workingclass','fnlwgt','education','education-num','marital-status','occupation','relationship','race','sex','capital-gain','capital-loss','hours-per-week','native-country','salary']
 print(df['race'].value_counts())#1
 df['sex']=df['sex'].str.strip()
